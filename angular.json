@@ -23,7 +23,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "extraWebpackConfig": "webpack.extra.js",
+            "extraWebpackConfig": "extra-webpack.config.js",
             "styles": [
               "src/styles.css"
             ],
@@ -64,7 +64,7 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "extraWebpackConfig": "webpack.extra.js",
+            "extraWebpackConfig": "extra-webpack.config.js",
             "browserTarget": "SPA-test:build"
           },
           "configurations": {
