@@ -36,6 +36,7 @@
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
     "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-plugin": "^4.0.4",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.0.0",
