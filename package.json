@@ -4,12 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build-dev": "ng build --eval-source-map --plugin ~source-maps-inline-plugin.js",
+    "build-prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ngcc",
-    "serve": "ng serve --extra-webpack-config extra-webpack.config.js -o"
+    "serve": "ng serve --extra-webpack-config extra-webpack.config.js -o --eval-source-map --plugin ~source-maps-inline-plugin.js"
   },
   "private": true,
   "dependencies": {
