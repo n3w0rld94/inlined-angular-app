@@ -8,16 +8,6 @@ Once built, a "bundled.html" file appears in the dist folder and can be opened a
 
 A use case is to load the above html filr in a secure cloud storage and then load it from an `<iframe>` allowing flexible integration in any web page and even markup document:
 
-<iframe id="example" onload="onLoad()" style="border: none; width: 100%;" src="https://github.com/n3w0rld94/inlined-angular-app/blob/master/example%20bundle/bundled.html">
-
-</iframe>
-<script>
-    function onLoad() {
-        var iframe = document.getElementById("example");
-        iframe.height = iframe.contentWindow.document.body.scrollHeight * 1.1 + "px";
-    }
-</script>
-
 ## Development server
 
 Run `npm run serve` . The app will automatically reload if you change any of the source files.
