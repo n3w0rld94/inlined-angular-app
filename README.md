@@ -6,7 +6,7 @@ It supports out-of-the-box Angular Routing and (zone.js) Change Detection.
 
 Once built, a "bundled.html" file appears in the dist folder and can be opened as an html page withuot the need to be served.
 
-A use case is to load the above html filr in a secure cloud storage and then load it from an `<iframe>` allowing flexible integration in any web page and even markup document:
+A use case is to load the above html filr in a secure cloud storage and then load it from an `<iframe>` allowing flexible integration in any web page and even (compatible) markup documents.
 
 ## Development server
 
