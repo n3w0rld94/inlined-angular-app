@@ -8,7 +8,7 @@ Once built, a "bundled.html" file appears in the dist folder and can be opened a
 
 A use case is to load the above html filr in a secure cloud storage and then load it from an `<iframe>` allowing flexible integration in any web page and even markup document:
 
-<iframe id="example" onload="onLoad()" style="border: none; width: 100%;" src="" sandbox>
+<iframe id="example" onload="onLoad()" style="border: none; width: 100%;" src="https://github.com/n3w0rld94/inlined-angular-app/blob/master/example%20bundle/bundled.html">
 
 </iframe>
 <script>
