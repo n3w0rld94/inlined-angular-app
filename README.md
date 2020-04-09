@@ -1,27 +1,29 @@
 # SPATest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.10.
+This is an example Angular app fully contained in an html file. 
+
+It supports out-of-the-box Angular Routing and (zone.js) Change Detection.
+
+Once built, a "bundled.html" file appears in the dist folder and can be opened as an html page withuot the need to be served.
+
+A use case is to load the above html filr in a secure cloud storage and then load it from an `<iframe>` allowing flexible integration in any web page and even markup document:
+
+<iframe id="example" onload="onLoad()" style="border: none; width: 100%;" src="" sandbox>
+
+</iframe>
+<script>
+    function onLoad() {
+        var iframe = document.getElementById("example");
+        iframe.height = iframe.contentWindow.document.body.scrollHeight * 1.1 + "px";
+    }
+</script>
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `npm run serve` . The app will automatically reload if you change any of the source files.
+>**NOTE**: Using `ng serve` will not load source maps.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run build-dev` to build the project in development mode with inline source maps. Use `npm run build-prod` a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
