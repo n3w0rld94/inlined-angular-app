@@ -5,13 +5,13 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 
-if (environment.production) {
-  enableProdMode();
-}
-
 if (!window['angulr-app-started-already']) {
-  console.log("Bootstrapped")
   window['angulr-app-started-already'] = true;
+
+  if (environment.production) {
+    enableProdMode();
+  }
+
   platformBrowserDynamic().bootstrapModule(AppModule)
     .catch(err => console.log(err));
 }
