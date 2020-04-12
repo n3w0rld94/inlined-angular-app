@@ -3,8 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SPATest</title>
-  <script>document.write('<base href="' + document.location + '" />');</script>
+  <title>SFA Test</title>
+  <script>
+    let baseURL = sessionStorage.getItem("baseURL");
+
+    if (!baseURL) {
+      baseURL = document.location;
+      sessionStorage.setItem("baseURL", baseURL);
+    }
+
+    console.log("base url", baseURL);
+    document.write('<base href="' + baseURL + '" />');
+  </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">

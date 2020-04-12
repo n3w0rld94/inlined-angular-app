@@ -1,1 +1,7 @@
-<p>home works!</p>
+<div>
+    <div #header>
+        <h1>Zone JS Demo</h1>
+        <h2 *ngIf="!hideSubtitle">Useless subtitle</h2>
+        <input class="form-control" type="checkbox" [(ngModel)]="hideSubtitle">Hide useless subtitle
+    </div>
+</div>
